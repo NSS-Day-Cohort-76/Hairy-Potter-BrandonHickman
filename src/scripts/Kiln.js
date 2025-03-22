@@ -1,4 +1,4 @@
-export function firePottery(pottery, temperature) {
+export const firePottery = (pottery, temperature) => {
     // add the fired property
     pottery.fired = true;
 

@@ -1,12 +1,16 @@
-let potteryId = 0; //Initialize a variable to track the id of each pottery
+let potteryId = 1; // Variable to track the primary key for each piece of pottery
 
+// Function to create a new piece of pottery
 export function makePottery(shape, weight, height) {
-    potteryId++;
+    const pottery = {
 
-    return {
         shape: shape,
         weight: weight,
         height: height,
-        id: potteryId
+        id: potteryId,
     };
+
+    potteryId++; //Assigns the current pottery ID
+
+    return pottery;
 }
