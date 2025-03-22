@@ -1,7 +1,7 @@
 const potteryToSell = [];
 
 export const toSellOrNotToSell = (pottery) => {
-    // If the pottery is cracked, don't add it
+    // If the pottery is cracked, it doesn't get added
     if (pottery.cracked) {
         return pottery;
     }
@@ -15,14 +15,14 @@ export const toSellOrNotToSell = (pottery) => {
         pottery.price = 20;
     }
 
-    // add the pottery to the potteryToSell array
+    // add the pottery object to the potteryToSell array
     potteryToSell.push(pottery);
 
-    // return the modified pottery object
+    // return the pottery object with added price property
     return pottery;
 }
 
-export function usePottery() {
+export const usePottery = () => {
     // return a deep copy of the array of items to be sold
     return structuredClone(potteryToSell)
 }

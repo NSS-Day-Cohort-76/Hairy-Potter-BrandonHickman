@@ -9,6 +9,6 @@ export const firePottery = (pottery, temperature) => {
         pottery.cracked = false;
     }
 
-    // return the modified pottery object
+    // returns object pottery with new property 
     return pottery;
 }
