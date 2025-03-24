@@ -1,7 +1,7 @@
 import { usePottery } from "./PotteryCatalog.js";
 
 export const PotteryList = () => {
-    const potteryToSell = usePottery(); // Gets the list of pottery to sell from UsePottery
+    const potteryToSell = usePottery(); // usePottery is called to provide the data and store it into potteryToSell
 
     return potteryToSell.map(pottery => {
         return `
